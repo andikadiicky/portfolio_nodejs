@@ -14,10 +14,10 @@ npm start
 
 ##Endpoint API
 #Work Experience
-GET /api/work-experiences/getAllWorkExperience
+POST /api/work-experiences/getAllWorkExperience
 POST /api/work-experiences/insert
-PUT /api/work-experiences/update/:id #:id is equal to work_exp_id value
-DELETE /api/work-experiences/delete/:id #:id is equal to work_exp_id value
+PUT /api/work-experiences/update/:id #:id is equal to id_user value
+DELETE /api/work-experiences/delete/:id #:id is equal to id_user value
 
 #Portfolio
 GET /api/portfolios/getAllPortfolio
