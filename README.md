@@ -20,7 +20,7 @@ PUT /api/work-experiences/update/:id #:id is equal to id_user value
 DELETE /api/work-experiences/delete/:id #:id is equal to id_user value
 
 #Portfolio
-GET /api/portfolios/getAllPortfolio
+POST /api/portfolios/getAllPortfolio
 POST /api/portfolios/insert
-PUT /api/portfolios/update/:id #:id is equal to portfolio_id value
-DELETE /api/portfolios/delete/:id #:id is equal to portfolio_id value
+PUT /api/portfolios/update/:id #:id is equal to id_user value
+DELETE /api/portfolios/delete/:id #:id is equal to id_user value

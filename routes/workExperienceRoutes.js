@@ -37,10 +37,10 @@ router.post('/insert', async (req, res) => {
     const { name, current_position, about, data_experiences } = req.body;
 
     // Validate input
-    if (!name || !Array.isArray(data_experiences)) {
+    if (!name || !current_position || !about || !Array.isArray(data_experiences)) {
       return res.status(400).json({
         status: false,
-        message: 'Invalid payload: "name" and "data_experiences" are required.',
+        message: 'Invalid payload: "name", "current_position", "about" and "data_experiences" are required.',
       });
     }
 
