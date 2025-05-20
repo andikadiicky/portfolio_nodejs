@@ -2,7 +2,12 @@ const express = require('express');
 const router = express.Router();
 const WorkExperience = require('../models/WorkExperience');
 
-router.post('/getAllWorkExperience', async (req, res) => {
+router.get('/getAllWorkExperience', async (req, res) => {
+  const data = await WorkExperience.find();
+  res.json({ status: true, data });
+});
+
+router.post('/getWorkExperience', async (req, res) => {
   try {
     const { id_user } = req.body;
     console.log(req.body);

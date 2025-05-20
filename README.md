@@ -13,14 +13,15 @@ npm install
 npm start
 
 ##Endpoint API
-#Work Experience
-POST /api/work-experiences/getAllWorkExperience
+GET /api/work-experiences/getAllWorkExperience
+POST /api/work-experiences/getWorkExperience
 POST /api/work-experiences/insert
 PUT /api/work-experiences/update/:id #:id is equal to id_user value
 DELETE /api/work-experiences/delete/:id #:id is equal to id_user value
 
 #Portfolio
-POST /api/portfolios/getAllPortfolio
+GET /api/portfolios/getAllPortfolio
+POST /api/portfolios/getPortfolio
 POST /api/portfolios/insert
 PUT /api/portfolios/update/:id #:id is equal to id_user value
 DELETE /api/portfolios/delete/:id #:id is equal to id_user value

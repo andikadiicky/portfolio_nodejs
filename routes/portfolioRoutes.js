@@ -2,7 +2,12 @@ const express = require('express');
 const router = express.Router();
 const Portfolio = require('../models/Portfolio');
 
-router.post('/getAllPortfolio', async (req, res) => {
+router.get('/getAllPortfolio', async (req, res) => {
+  const data = await Portfolio.find();
+  res.json({ status: true, data });
+});
+
+router.post('/getPortfolio', async (req, res) => {
   try {
     const { id_user } = req.body;
     console.log(req.body);
