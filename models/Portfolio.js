@@ -17,6 +17,10 @@ const PortfolioSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  description: {
+    type: String,
+    required: true
+  },
   project_responsibilities: {
     type: [String],
     required: true
